@@ -110,8 +110,8 @@ class Game {
 	/** @param {KeyboardState} kb */
 	constructor(kb) {
 		this.kb = kb;
-		this.speed = 100;
-		this.maxSpeed = 500;
+		this.speed = 10;
+		this.maxSpeed = 100;
 		this.accelerationRate = 5;
 		this.accelerationInterval = 100;
 		this.timeSinceLastAcceleration = 0;
@@ -299,11 +299,11 @@ class ScorePlatform {
 	 */
 	constructor(g) {
 		this.game = g;
-		this.width = 23;
+		this.width = 40;
 		this.height = canvas.height;
 
 		this.x = 0;
-		this.y = canvas.height - 200;
+		this.y = canvas.height - 150;
 
 		this.isVisible = true;
 
